@@ -11,7 +11,7 @@ source:
   sha256: cda2c1a151dca72f9af98f089cc95859796dbad6a0b9b2687e578bfa0bb1f182
 
 build:
-  number: 0
+  number: 1
   skip: true   # [py>=40 or linux]
   entry_points:
     - docx2pdf = docx2pdf:cli
