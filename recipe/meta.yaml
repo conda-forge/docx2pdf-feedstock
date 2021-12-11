@@ -1,5 +1,5 @@
 {% set name = "docx2pdf" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/docx2pdf-{{ version }}.tar.gz
-  sha256: cda2c1a151dca72f9af98f089cc95859796dbad6a0b9b2687e578bfa0bb1f182
+  sha256: 6d2c20f9ad36eec75f4da017dc7a97622946954a6124ca0b11772875fa86fbed
 
 build:
-  number: 1
-  skip: true   # [py>=40 or linux]
+  number: 0
+  skip: true  # [py>=40 or linux]
   entry_points:
     - docx2pdf = docx2pdf:cli
   script: {{ PYTHON }} -m pip install . -vv
