@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/docx2pdf-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/docx2pdf-{{ version }}.tar.gz
   sha256: 6d2c20f9ad36eec75f4da017dc7a97622946954a6124ca0b11772875fa86fbed
 
 build:
-  number: 2
+  number: 3
   skip: true  # [py>=40 or linux]
   entry_points:
     - docx2pdf = docx2pdf:cli
